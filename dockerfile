@@ -1,5 +1,3 @@
 FROM ubuntu
-RUN apt update -y && \
-    apt install apache2 -y
-CMD ["apache2ctl", "-D", "FOREGROUND"]
-
+RUN apt update -y
+CMD ["tail", "-f", "/dev/null"]
